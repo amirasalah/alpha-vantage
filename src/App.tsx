@@ -1,11 +1,17 @@
-import './App.css'
+import { DataTable } from './data-table'
+import { QueryClient, QueryClientProvider } from 'react-query'
 
 function App() {
 
-  return (
-    <>
+  const queryClient = new QueryClient()
 
-    </>
+  return (
+    <QueryClientProvider client={queryClient}>
+      <main className="App">
+        <DataTable />
+      </main>
+    </QueryClientProvider>
+
   )
 }
 
