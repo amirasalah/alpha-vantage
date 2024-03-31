@@ -1,4 +1,4 @@
-import React, {FC} from 'react'
+import {FC} from 'react'
 import { Data } from '../types'
 
 export const DataRow:FC<{data: Data}> = ( data ) => {

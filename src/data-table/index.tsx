@@ -11,7 +11,7 @@ export const baseURL = 'https://www.alphavantage.co/query'
 export const DataTable:FC = () => {
     const [category, setCategory] = React.useState(categories.CURRENCY_EXCHANGE_RATE)
 
-    const { data, isError, isLoading } = useQuery<Data>([category], () => fetchData(`${baseURL}?function=${category}&symbol=IBM&interval=5min&apikey=demo`), {
+    const { data, isError, isLoading } = useQuery<Data>([category], () => fetchData(`${baseURL}?function=${category}&symbol=IBM&interval=5min&apikey=BV9AYZ6GN9Y2RQJI`), {
         retry: false
     })
  
